@@ -53,7 +53,7 @@ Allowed management to objectively evaluate field team performance through a clea
 **Summary Data using Formulas:**
 <img width="1192" height="727" alt="SUMMARY DENGAN RUMUS COUNTIF" src="https://github.com/user-attachments/assets/c4dabc01-05b5-42ce-8f06-cc59e17efe64" />
 
-**Data clenimng handling null using SQL**
+**Data cleaning handling null using SQL**
 <img width="1492" height="947" alt="SQL HANDLING NULLS" src="https://github.com/user-attachments/assets/e07e708d-dc08-45a9-bbb9-6097b9983fe7" />
 :**
 
