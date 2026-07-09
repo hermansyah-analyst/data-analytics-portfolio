@@ -1,4 +1,5 @@
-Welcome to my portfolio! Here, I document my journey and projects as a Data Analyst, focusing on turning raw data into actionable business strategies and interactive business intelligence solutions.
+Welcome to my portfolio! 
+Here, I document my journey and projects as a Data Analyst, focusing on turning raw data into actionable business strategies and interactive business intelligence solutions.
 ---
 📈 Featured Project: End-to-End Sales Performance Architecture & Interactive Dashboard
 
