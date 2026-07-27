@@ -9,18 +9,18 @@ Industry: Financial Services / Digital Banking / Fintech
 Tools Used: SQL, Power BI, DAX, Excel, Google Sheet
 
 ---
-📌 SITUATION
+### 📌 SITUATION
 Management required an urgent comprehensive analysis of digital financial products (QRIS, Top-Ups, Bill Payments, Loan Revenue, Gold Savings, and Transfers) 
 to prepare for an executive board review. Concurrently, the digital platform experienced a **15% drop in user conversion rate** over a two-week period despite 
 stable overall platform traffic.
 
-📌 TASK
+### 📌 TASK
 1.Perform End-to-End Analytics:** Clean raw multi-channel transaction datasets, establish core financial KPIs, and design a dynamic executive dashboard 
   under a tight deadline.
 2. Execute Root Cause Analysis (RCA):** Diagnose the underlying drivers of the 15% conversion drop and deliver actionable mitigation strategies.
 3. Navigate Data Governance & Tight Deadlines:** Manage delayed database access while maintaining strict reporting timelines and data integrity.
 
-📌 ACTION
+### 📌 ACTION
 * **Data Pipeline & BI Dashboarding:** 
   * Prepared and validated raw multi-channel datasets using Google Sheets functions.
   * Designed a 2-page interactive BI dashboard in **Looker Studio** featuring *Executive KPIs, Target vs. Achievement, Omnichannel Distribution,* 
@@ -33,7 +33,26 @@ stable overall platform traffic.
   * Expedited access requests via official ticketing while leveraging validated secondary financial reports as temporary fallbacks.
   * Applied transparent data disclaimers to ensure executive reporting accuracy.
 
-📌 RESULT
+### 📌 RESULT
+**Raw Data Condition:**
+<img width="1017" height="567" alt="image" src="https://github.com/user-attachments/assets/b7bd416b-33dd-4124-bb37-0f07981fc92e" />
+
+**Querying using SQL:**
+<img width="442" height="642" alt="image" src="https://github.com/user-attachments/assets/5ef0400a-1c17-40c7-8287-f18add4a3da7" />
+
+**Study Case Bussiness Analytical:**
+<img width="436" height="602" alt="image" src="https://github.com/user-attachments/assets/2709e0d2-48b5-429b-91c4-1c38e694c8db" />
+
+**Dashboard:**
+<img width="1142" height="510" alt="image" src="https://github.com/user-attachments/assets/ac4d8fb9-7225-4ade-8683-bab127af486b" />
+
+**The Link Demo:** https://datastudio.google.com/reporting/7c185489-2bd4-46cd-8e98-c0fca308fe83
+
+
+
+
+
+
 
 
 
