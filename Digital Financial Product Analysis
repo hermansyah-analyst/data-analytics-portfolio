@@ -4,70 +4,38 @@
 This project focuses on analyzing the business and transaction performance of digital financial products 
 (QRIS, Top Up, Bill Payment, Loan Revenue, Gold Savings, and Money Transfer). 
 
-It covers the full end-to-end data analytics lifecycle: 
-**Data Pipeline & Cleansing**, 
-**Interactive BI Dashboard (Looker Studio)**, 
-**SQL Data Querying**, and a structured 
-**Root Cause Analysis (RCA)** 
-framework to solve real-world business challenges.
+Role: Data Analyst / Financial Data Analyst
+Industry: Financial Services / Digital Banking / Fintech
+Tools Used: SQL, Power BI, DAX, Excel, Google Sheet
 
-* 🔗 **Live Interactive Dashboard:** [Click here to open Looker Studio Dashboard](https://datastudio.google.com/reporting/7c185489-2bd4-46cd-8e98-c0fca308fe83)
+---
+📌 SITUATION
+Management required an urgent comprehensive analysis of digital financial products (QRIS, Top-Ups, Bill Payments, Loan Revenue, Gold Savings, and Transfers) 
+to prepare for an executive board review. Concurrently, the digital platform experienced a **15% drop in user conversion rate** over a two-week period despite 
+stable overall platform traffic.
+
+📌 TASK
+1.Perform End-to-End Analytics:** Clean raw multi-channel transaction datasets, establish core financial KPIs, and design a dynamic executive dashboard 
+  under a tight deadline.
+2. Execute Root Cause Analysis (RCA):** Diagnose the underlying drivers of the 15% conversion drop and deliver actionable mitigation strategies.
+3. Navigate Data Governance & Tight Deadlines:** Manage delayed database access while maintaining strict reporting timelines and data integrity.
+
+📌 ACTION
+* **Data Pipeline & BI Dashboarding:** 
+  * Prepared and validated raw multi-channel datasets using Google Sheets functions.
+  * Designed a 2-page interactive BI dashboard in **Looker Studio** featuring *Executive KPIs, Target vs. Achievement, Omnichannel Distribution,* 
+    and *Product Deep-Dives*.
+* **Root Cause Analysis Execution:**
+  * Mapped user drop-offs across funnel stages (*Landing Page* $\rightarrow$ *Checkout* $\rightarrow$ *Payment*).
+  * Segmented transactional data across *Device/OS, Payment Gateway, User Cohorts,* and *Regions*.
+  * Applied the *5 Whys* methodology to isolate technical app crashes on specific OS builds and payment gateway timeout spikes.
+* **Agile Stakeholder & Risk Management:**
+  * Expedited access requests via official ticketing while leveraging validated secondary financial reports as temporary fallbacks.
+  * Applied transparent data disclaimers to ensure executive reporting accuracy.
+
+📌 RESULT
+Raw Data Condition:
+
 
 ---
 
-## 🛠️ Tech Stack & Methodology
-* **Data Cleansing & Transformation:** Google Sheets (`SUMIFS`, `COUNTUNIQUEIFS`, `% Achievement`)
-* **Data Visualization & BI:** Google Looker Studio (Multi-page Dashboard, Interactive Filters, Dynamic Scorecards)
-* **Database & Querying:** SQL (Data Extraction, Aggregation, & Joining)
-* **Analytical Frameworks:** Root Cause Analysis (RCA), Funnel Analysis, Data Segmentation (Slicing & Dicing), 5 Whys
-
----
-
-## 📈 Key Dashboard Modules
-
-### 1. Executive Summary & Omnichannel Analysis (Page 1)
-* **Core KPI Metrics:** Real-time tracking for Total Revenue, Transaction Volume, and Active Users (MAU, DAU, QRIS Users).
-* **Target vs. Achievement:** Evaluation of business revenue goals (achieving **105%** target attainment for *Loan Revenue*).
-* **Omnichannel Distribution:** Channel contribution analysis across *Branch*, *Web*, and *Mobile App*.
-* **Daily Trend Analysis:** Identification of daily peak transaction periods and volume fluctuations.
-
-### 2. Product Breakdown & Deep-Dive Analytics (Page 2)
-* **Bill Payment Breakdown:** Categorical deep-dive into bill types (*Water*, *Internet*, *Electricity*, *Mobile*).
-* **Top-Up & Feature Adoption:** Performance evaluation of digital features (*e-Wallet*, *Gaming*, *Mobile Credit*, *Gold Savings*).
-
----
-
-## 💡 Key Business Insights
-
-1. **High-Value User Engagement:**
-   * Loan Revenue exceeded target expectations (**105% / IDR 2.51 Billion**), driven primarily by high-value transactions from the existing user base. However, new user acquisition (MAU/DAU) requires boosted retention strategies and targeted growth campaigns.
-2. **Balanced Omnichannel Performance:**
-   * Transactions are evenly distributed across all three channels: **Branch (34.2%)**, **Web (34.1%)**, and **Mobile App (31.7%)**, proving a well-adopted omnichannel user ecosystem.
-3. **Bill Payment Growth Opportunity:**
-   * **Water** and **Internet** utility payments generated the highest transaction volumes within the Bill Payment category, presenting a key opportunity for recurring payment loyalty programs and cashback campaigns.
-
----
-
-## 🔍 Case Study: Root Cause Analysis (RCA)
-
-### 🚨 Problem Statement
-The management observed a **15% drop in conversion rate** on the digital e-commerce platform over the last two weeks, while overall platform traffic remained stable.
-
-### 🛠️ Diagnostic Steps (RCA Framework)
-1. **Data Validation:** Verifying tracking event scripts and ruling out seasonality factors.
-2. **Funnel Analysis:** Mapping user drop-off across stages (*Landing Page* $\rightarrow$ *Product Detail Page* $\rightarrow$ *Checkout* $\rightarrow$ *Payment Success*).
-3. **Data Segmentation:** Slicing performance metrics by *Device/OS*, *Payment Gateway*, *User Segment* (New vs. Returning), and *Region*.
-
-### 🎯 Strategic Action Plan
-* **Technical Issues:** Deploying immediate hotfix updates if app crashes are detected on specific OS versions, alongside engineering team intervention.
-* **Payment Failures:** Routing default checkout traffic to backup payment gateways if primary provider error rates spike.
-* **User Retention:** Launching *Cart Abandonment Push Notifications* and targeted promotional vouchers to recover lost transactions.
-
----
-
-## 📂 Project Directory Structure
-```text
-.
-├── assets/                  <-- Visual dashboard screenshots (.png/.jpg)
-├── sql/                     <-- SQL query scripts
-└── README.md                <-- Main project documentation
