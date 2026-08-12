@@ -7,7 +7,7 @@
 **Note:**: This case study is based on an anonymized and simulated version of a real-world sales reporting workflow. Company names, figures, and identifying details have been modified to protect confidentiality.
 
 ### 📌 SITUATION
-During its initial phase, NETCOM experienced rapid business by opening new many branches all over Indonesia. However, this growth lack of centralized reporting system. Management was overwhelemed with a massive volume data transactions from all over regions which remained scattered, uncleaned, and stored in raw formats. Furthermore, executive team lacked of clarity on which metrics should be tracked. It making highly difficult to monitor the achivemnet, trend, and growth of business.
+During its initial phase, NETCOM expanded rapidly by opening new branches across Indonesia. However, this growth lack of centralized reporting system. Management was overwhelemed with a massive volume data transactions from all over regions which remained scattered, uncleaned, and stored in raw formats. Furthermore, executive team lacked of clarity on which metrics should be tracked. It making highly difficult to monitor the achivemnet, trend, and growth of business.
 
 ### 📌 TASK
 As a role Data Analys which directly recruited by management, i was challenged to design and build the centralized reporting system from scratch. 
