@@ -89,8 +89,32 @@ worksheet.update(
 ## Evidence & Results
 
 The pipeline was successfully tested from MySQL extraction through Google Sheets loading.
+1. Python Check
+<img width="1477" height="752" alt="1  python check" src="https://github.com/user-attachments/assets/5c6a8178-f299-4f56-9829-4edccda7822b" />
 
-Screenshots of the development and execution process are available in the [`screenshots`](screenshots/) folder.
+2. Check Connector Mysql
+   <img width="1471" height="751" alt="2  check connector mysql" src="https://github.com/user-attachments/assets/b15ca787-8457-48c5-b6b0-4ae862332e49" />
+
+3. Make Folder in VS Code
+   <img width="307" height="195" alt="3  buat folder di vscode" src="https://github.com/user-attachments/assets/4b6544a1-b260-4184-9d8b-a227796ded30" />
+
+4. Test Connetion
+    <img width="906" height="391" alt="4  test connection" src="https://github.com/user-attachments/assets/71201533-a15e-4d9b-8624-a0cd66646a8f" />
+
+5.1 Make Project Google Cloud
+    <img width="1037" height="746" alt="5 1 buat projct google cloud" src="https://github.com/user-attachments/assets/4ba3a11a-96b0-4910-8b6c-53be94f1cf17" />
+
+5.2 Google Sheet API
+    <img width="757" height="471" alt="5 2 google sheets api" src="https://github.com/user-attachments/assets/4178720c-1343-494d-8f9c-0bad498329e7" />
+
+5.3 Google Drive API
+    <img width="657" height="376" alt="5 3 google drive api" src="https://github.com/user-attachments/assets/71f417f0-bc50-4da1-b508-799360375a9f" />
+
+5.4 Service Account
+    <img width="786" height="732" alt="5 4 service_account" src="https://github.com/user-attachments/assets/e837475e-7b2c-4881-9505-a0ccd07fb896" />
+
+6. Data Gsheet
+   <img width="1812" height="880" alt="6  data gsheet" src="https://github.com/user-attachments/assets/e1d503b0-56e9-4ccd-be95-4af722ac6915" />
 
 ### Final Result
 
