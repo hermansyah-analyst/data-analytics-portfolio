@@ -26,3 +26,17 @@ The project covers:
 * Loading processed data into Google Sheets
 * Preparing the dataset for BI visualization
 
+## Tools & Technologies
+
+| Tool / Technology      | Purpose                             |
+| ---------------------- | ----------------------------------- |
+| Python                 | ETL process and data transformation |
+| MySQL                  | Source database                     |
+| MySQL Connector/Python | Connect Python to MySQL             |
+| Google Cloud           | Service Account authentication      |
+| gspread                | Connect Python to Google Sheets     |
+| Google Sheets          | Data destination / reporting layer  |
+| Looker Studio          | BI dashboard and data visualization |
+| Visual Studio Code     | Development environment             |
+
+
