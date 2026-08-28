@@ -1,28 +1,28 @@
 # Python MySQL to Google Sheets ETL Pipeline
 
-An end-to-end ETL pipeline built with Python to extract data from MySQL, transform the data, and load the result into Google Sheets.
-
 ## Project Overview
 
-This project demonstrates how Python can be used to automate the ETL process between a MySQL database and Google Sheets.
+This project demonstrates an ETL (Extract, Transform, Load) pipeline built with Python.
 
-The project was built step by step, starting from environment setup and database connectivity, followed by data extraction, data transformation, Google authentication, and finally loading the processed data into Google Sheets.
+The pipeline extracts data from a MySQL database, transforms selected data types to ensure compatibility with Google Sheets, and loads the processed data into a Google Sheets worksheet.
 
-## Pipeline
+The resulting dataset can then be used as a data source for BI dashboard development.
 
-MySQL → Python → Google Sheets → BI Dashboard
+### Pipeline
 
-## Tools & Technologies
+**MySQL → Python → Google Sheets → BI Dashboard**
 
-* Python
-* MySQL
-* MySQL Connector/Python
-* Google Cloud
-* Google Service Account
-* gspread
-* Google Sheets
-* Looker Studio
+### Objective
 
-## Project Status
+The objective of this project is to demonstrate a practical data pipeline that connects a relational database with a cloud-based spreadsheet for reporting and business intelligence purposes.
 
-🚧 In progress — documentation and BI dashboard are being finalized.
+The project covers:
+
+* Connecting Python to MySQL
+* Extracting data using SQL
+* Processing and transforming data with Python
+* Handling database data types such as `date`, `datetime`, and `Decimal`
+* Connecting Python to Google Sheets using a Service Account
+* Loading processed data into Google Sheets
+* Preparing the dataset for BI visualization
+
