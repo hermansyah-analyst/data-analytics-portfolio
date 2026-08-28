@@ -1,41 +1,119 @@
-# Python MySQL to Google Sheets ETL Pipeline
+# Python ETL Pipeline — MySQL to Google Sheets
 
 ## Project Overview
 
-This project demonstrates an ETL (Extract, Transform, Load) pipeline built with Python.
+An automated ETL pipeline built with Python to extract data from MySQL, transform the data into a Google Sheets-compatible format, and load the result into Google Sheets.
 
-The pipeline extracts data from a MySQL database, transforms selected data types to ensure compatibility with Google Sheets, and loads the processed data into a Google Sheets worksheet.
+**Flow:**
 
-The resulting dataset can then be used as a data source for BI dashboard development.
-
-### Pipeline
-
-**MySQL → Python → Google Sheets → BI Dashboard**
-
-### Objective
-
-The objective of this project is to demonstrate a practical data pipeline that connects a relational database with a cloud-based spreadsheet for reporting and business intelligence purposes.
-
-The project covers:
-
-* Connecting Python to MySQL
-* Extracting data using SQL
-* Processing and transforming data with Python
-* Handling database data types such as `date`, `datetime`, and `Decimal`
-* Connecting Python to Google Sheets using a Service Account
-* Loading processed data into Google Sheets
-* Preparing the dataset for BI visualization
+```text
+MySQL → Python → Transform → Google Sheets → BI Dashboard
+```
 
 ## Tools & Technologies
 
-| Tool / Technology      | Purpose                             |
-| ---------------------- | ----------------------------------- |
-| Python                 | ETL process and data transformation |
-| MySQL                  | Source database                     |
-| MySQL Connector/Python | Connect Python to MySQL             |
-| Google Cloud           | Service Account authentication      |
-| gspread                | Connect Python to Google Sheets     |
-| Google Sheets          | Data destination / reporting layer  |
+* Python
+* MySQL
+* MySQL Connector/Python
+* Google Cloud
+* Google Sheets API
+* Google Drive API
+* gspread
+* VS Code
+
+## Project Process
+
+The pipeline was developed step-by-step, starting from the Python environment and MySQL connection, followed by data extraction, transformation, Google authentication, testing, and finally loading the processed data into Google Sheets.
+
+Detailed development steps are documented in:
+
+`development_steps.py`
+
+The final implementation is available in:
+
+`pipeline.py`
+
+## Key Python Implementation
+
+### MySQL Connection
+
+```python
+db = mysql.connector.connect(
+    host="localhost",
+    port=3306,
+    database="sql_case_study",
+    user="root",
+    password="YOUR_PASSWORD"
+)
+
+cursor = db.cursor()
+```
+
+### Extract Data
+
+```python
+cursor.execute("""
+    SELECT *
+    FROM view_summary_master
+""")
+
+rows = cursor.fetchall()
+```
+
+### Transform Data
+
+MySQL data types such as `date`, `datetime`, and `Decimal` are converted into formats that can be processed by Google Sheets.
+
+```python
+if isinstance(value, (date, datetime)):
+    new_row.append(value.isoformat())
+
+elif isinstance(value, Decimal):
+    new_row.append(float(value))
+```
+
+### Load to Google Sheets
+
+```python
+worksheet.update(
+    range_name="A1",
+    values=[headers]
+)
+
+worksheet.update(
+    range_name="A2",
+    values=data
+)
+```
+
+## Evidence & Results
+
+The pipeline was successfully tested from MySQL extraction through Google Sheets loading.
+
+Screenshots of the development and execution process are available in the [`screenshots`](screenshots/) folder.
+
+### Final Result
+
+The processed MySQL data was successfully loaded into the `SUMMARY MASTER` worksheet in Google Sheets.
+
+## Project Structure
+
+```text
+Python-MySQL-GSheets-ETL/
+│
+├── README.md
+├── pipeline.py
+├── development_steps.py
+├── screenshots/
+└── .gitignore
+```
+
+## Notes
+
+`service_account.json` contains sensitive Google credentials and is intentionally excluded from the repository.
+
+The complete working pipeline is available in `pipeline.py`.
+
 | Looker Studio          | BI dashboard and data visualization |
 | Visual Studio Code     | Development environment             |
 
