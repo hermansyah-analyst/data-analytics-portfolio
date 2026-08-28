@@ -77,19 +77,19 @@
 # # untuk menjalankan dan menguji Python script.
 # #
 
-# # 1. Buat folder:
-# #    sql_bi_pipeline
+1. Buat folder:
+   sql_bi_pipeline
 
-# # 2. Buka VS Code
+2. Buka VS Code
 
-# # 3. Pilih:
-# #    File → Open Folder
+3. Pilih:
+   File → Open Folder
 
-# # 4. Pilih folder:
-# #    sql_bi_pipeline
+4. Pilih folder:
+  sql_bi_pipeline
 
-# # 5. Buat file:
-# #    test_mysql.py
+5. Buat file:
+  test_mysql.py
 # # ============================================================
 
 
@@ -111,9 +111,9 @@
 # #
 # # ============================================================
 
-# import mysql.connector
+import mysql.connector
 
-# print("MySQL Connector berhasil di-import oleh Python")
+print("MySQL Connector berhasil di-import oleh Python")
 
 # # ============================================================
 # # STEP 5 — MEMBUAT KONEKSI KE DATABASE
@@ -138,15 +138,15 @@
 # #
 # # ============================================================
 
-# db = mysql.connector.connect(
-#     host="localhost",
-#     port=3306,
-#     database="sql_case_study",
-#     user="root",
-#     password="root"
-# )
+db = mysql.connector.connect(
+     host="localhost",
+     port=3306,
+     database="sql_case_study",
+     user="root",
+     password="YOUR PASSWORD"
+)
 
-# print("MySQL berhasil terhubung")
+print("MySQL berhasil terhubung")
 
 # # ============================================================
 # # STEP 6 — MEMBUAT CURSOR MYSQL
@@ -171,9 +171,9 @@
 # #
 # # ============================================================
 
-# cursor = db.cursor()
+cursor = db.cursor()
 
-# print("Cursor MySQL berhasil dibuat")
+print("Cursor MySQL berhasil dibuat")
 
 # # ============================================================
 # # STEP 8 — MENJALANKAN QUERY MYSQL DENGAN EXECUTE()
@@ -199,12 +199,12 @@
 # # "Oke, pesanan diterima. Datanya sudah aku siapkan." 😂
 # # ============================================================
 
-# cursor.execute("""
-#     SELECT *
-#     FROM view_summary_master
-# """)
+cursor.execute("""
+     SELECT *
+     FROM view_summary_master
+ """)
 
-# print("Query berhasil dijalankan")
+print("Query berhasil dijalankan")
 
 
 # # ============================================================
@@ -231,10 +231,10 @@
 # #
 # # ============================================================
 
-# rows = cursor.fetchall()
+rows = cursor.fetchall()
 
-# print("Data berhasil diambil dari MySQL")
-# print("Jumlah baris:", len(rows))
+print("Data berhasil diambil dari MySQL")
+print("Jumlah baris:", len(rows))
 
 # # ============================================================
 # # STEP 10 — MEMBACA NAMA KOLOM / HEADER
@@ -261,11 +261,11 @@
 # #
 # # ============================================================
 
-# columns = cursor.description
-# headers = [column[0] for column in columns]
+columns = cursor.description
+headers = [column[0] for column in columns]
 
-# print("Nama kolom berhasil dibaca:")
-# print(headers)
+print("Nama kolom berhasil dibaca:")
+print(headers)
 
 # # ============================================================
 # # CONNECT PYTHON DENGAN GSHEET
@@ -485,21 +485,21 @@
 # #
 # # ============================================================
 
-# import gspread
+import gspread
 
-# from google.oauth2.service_account import Credentials
+from google.oauth2.service_account import Credentials
 
 
-# credentials = Credentials.from_service_account_file(
-#     "service_account.json",
-#     scopes=[
-#         "https://www.googleapis.com/auth/spreadsheets",
-#         "https://www.googleapis.com/auth/drive"
-#     ]
-# )
+credentials = Credentials.from_service_account_file(
+     "service_account.json",
+     scopes=[
+         "https://www.googleapis.com/auth/spreadsheets",
+         "https://www.googleapis.com/auth/drive"
+     ]
+ )
 
-# print("Google authentication berhasil")
-# print("SERVICE ACCOUNT:", credentials.service_account_email)
+print("Google authentication berhasil")
+print("SERVICE ACCOUNT:", credentials.service_account_email)
 
 # # ============================================================
 # # STEP 14 — AUTHORIZE GOOGLE SHEETS DENGAN GSPREAD
@@ -522,9 +522,9 @@
 # #
 # # ============================================================
 
-# gc = gspread.authorize(credentials)
+gc = gspread.authorize(credentials)
 
-# print("gspread berhasil melakukan authorization")
+print("gspread berhasil melakukan authorization")
 
 
 # # ============================================================
@@ -549,9 +549,9 @@
 # #
 # # ============================================================
 
-# sheet = gc.open("BNETFIT MASTER DATA")
+sheet = gc.open("BNETFIT MASTER DATA")
 
-# print("Spreadsheet berhasil dibuka")
+print("Spreadsheet berhasil dibuka")
 
 # # ============================================================
 # # STEP 16 — MEMBUKA WORKSHEET / TAB
@@ -574,9 +574,9 @@
 # #
 # # ============================================================
 
-# worksheet = sheet.worksheet("SUMMARY MASTER")
+worksheet = sheet.worksheet("SUMMARY MASTER")
 
-# print("Worksheet berhasil dibuka")
+print("Worksheet berhasil dibuka")
 
 
 # # ============================================================
@@ -643,12 +643,12 @@
 # # SCRIPT TEST
 # # ============================================================
 
-# worksheet.update(
-#     range_name="A1",
-#     values=[["TEST PYTHON"]]
-# )
+worksheet.update(
+    range_name="A1",
+     values=[["TEST PYTHON"]]
+)
 
-# print("Python berhasil menulis ke Google Sheets")
+print("Python berhasil menulis ke Google Sheets")
 
 
 # # ============================================================
@@ -731,12 +731,12 @@
 # #
 # # ============================================================
 
-# worksheet.update(
-#     range_name="A1",
-#     values=[[""]]
-# )
+worksheet.update(
+     range_name="A1",
+    values=[[""]]
+)
 
-# print("Data test berhasil dihapus dari Google Sheets")
+print("Data test berhasil dihapus dari Google Sheets")
 
 
 # # ============================================================
@@ -821,39 +821,39 @@
 # #
 # # ============================================================
 
-# from datetime import date, datetime
-# from decimal import Decimal
+from datetime import date, datetime
+from decimal import Decimal
 
 
-# data = []
+data = []
 
 
-# for row in rows:
+for row in rows:
 
-#     new_row = []
+    new_row = []
 
-#     for value in row:
+     for value in row:
 
-#         # Mengubah date / datetime menjadi teks format ISO
-#         if isinstance(value, (date, datetime)):
+         # Mengubah date / datetime menjadi teks format ISO
+        if isinstance(value, (date, datetime)):
 
-#             new_row.append(value.isoformat())
+            new_row.append(value.isoformat())
 
-#         # Mengubah Decimal menjadi float
-#         elif isinstance(value, Decimal):
+         # Mengubah Decimal menjadi float
+         elif isinstance(value, Decimal):
 
-#             new_row.append(float(value))
+            new_row.append(float(value))
 
-#         # Tipe data lainnya dibiarkan seperti semula
-#         else:
+         # Tipe data lainnya dibiarkan seperti semula
+         else:
 
-#             new_row.append(value)
+             new_row.append(value)
 
-#     data.append(new_row)
+     data.append(new_row)
 
 
-# print("Data berhasil disiapkan untuk Google Sheets")
-# print("Jumlah baris yang siap dikirim:", len(data))
+print("Data berhasil disiapkan untuk Google Sheets")
+print("Jumlah baris yang siap dikirim:", len(data))
 
 # # ============================================================
 # # STEP 20 — MENGIRIM HEADER + DATA KE GOOGLE SHEETS
@@ -877,19 +877,19 @@
 # #
 # # ============================================================
 
-# all_data = [headers] + data
+all_data = [headers] + data
 
 
 # # ============================================================
 # # MENGIRIM DATA KE GOOGLE SHEETS
 # # ============================================================
 
-# worksheet.update(
-#     range_name="A1",
-#     values=all_data
-# )
+worksheet.update(
+    range_name="A1",
+    values=all_data
+)
 
-# print("Data berhasil dikirim ke Google Sheets")
+print("Data berhasil dikirim ke Google Sheets")
 
 
 # # ============================================================
@@ -921,12 +921,12 @@
 # #
 # # ============================================================
 
-# cursor.close()
+cursor.close()
 
-# print("Cursor MySQL ditutup")
+print("Cursor MySQL ditutup")
 
 
-# db.close()
+db.close()
 
-# print("Koneksi MySQL ditutup")
+print("Koneksi MySQL ditutup")
 
