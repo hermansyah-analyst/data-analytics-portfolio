@@ -1,1 +1,9 @@
+Sales Performance Analysis
 
+Project Overview
+
+Sales Performance Analysis is an end-to-end data analytics project designed to analyze business sales performance,
+identify key revenue drivers, and provide actionable insights through data visualization.
+This project demonstrates the complete analytics workflow, starting from database management using MySQL, 
+data processing with Python, reporting preparation through Google Sheets, and business dashboard creation 
+using Looker Studio.
