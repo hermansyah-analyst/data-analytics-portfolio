@@ -157,6 +157,32 @@ Final workflow:
 * **Power BI** — Interactive dashboard development
 * **Looker Studio** — Final online dashboard
 
+**01 - Summary Table Excel:**
+<img width="901" height="552" alt="SUMMARY TABEL " src="https://github.com/user-attachments/assets/265d5c30-9243-470f-9fc3-347d59a5ca17" />
+
+**02 — Power BI Dashboard:**
+<img width="1327" height="742" alt="netcom" src="https://github.com/user-attachments/assets/7d2bfaf7-bf32-495a-9321-826269a58de9" />
+
+**03 — Looker Studio Dashboard:**
+<img width="1462" height="647" alt="netcom looker" src="https://github.com/user-attachments/assets/ce086910-ec49-445b-b59c-d70ac40861f8" />
+
+**04 — Final Reporting Workflow:**
+**raw data:**
+<img width="1601" height="647" alt="RAW DATA " src="https://github.com/user-attachments/assets/55f41039-0967-4b28-a253-87ff48274d4c" />
+
+**sql:**
+<img width="1295" height="840" alt="view_laporan_ready_sql" src="https://github.com/user-attachments/assets/dc992e4b-0912-48d1-a519-a2faf95b0f59" />
+
+**sql:**
+
+
+
+
+
+
+
+
+
 
 
 
