@@ -92,13 +92,13 @@ The pipeline was successfully tested from MySQL extraction through Google Sheets
 1. Python Check
 <img width="1477" height="752" alt="1  python check" src="https://github.com/user-attachments/assets/5c6a8178-f299-4f56-9829-4edccda7822b" />
 
-2. Check Connector Mysql
+3. Check Connector Mysql
    <img width="1471" height="751" alt="2  check connector mysql" src="https://github.com/user-attachments/assets/b15ca787-8457-48c5-b6b0-4ae862332e49" />
 
-3. Make Folder in VS Code
+4. Make Folder in VS Code
    <img width="307" height="195" alt="3  buat folder di vscode" src="https://github.com/user-attachments/assets/4b6544a1-b260-4184-9d8b-a227796ded30" />
 
-4. Test Connetion
+5. Test Connetion
     <img width="906" height="391" alt="4  test connection" src="https://github.com/user-attachments/assets/71201533-a15e-4d9b-8624-a0cd66646a8f" />
 
 5.1 Make Project Google Cloud
